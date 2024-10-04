@@ -1,11 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Button } from "@/components/ui/button"
-
+import PromoCard from "@/components/_components/PromoCard.astro";
+import Topbar from "@/components/_components/Topbar.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<div class="flex items-center justify-center">
-		<Button>Hello World</Button>
-	</div>
+	<Topbar/>
+	<PromoCard/>
 </Layout>
