@@ -2,20 +2,20 @@
 import { ShoppingCart } from "lucide-react";
 ---
 
-<header class="bg-[#f5f0db] text-white py-4 shadow-md">
+<header class="fixed top-0 left-0 w-full bg-background text-primary py-4 shadow-md z-50">
   <div class="container mx-auto flex justify-between items-center">
     <!-- Left: Empty for alignment purposes -->
     <div class="w-1/3"></div>
 
     <!-- Center: Brand logo -->
     <div class="w-1/3 flex justify-center">
-      <a href="/" class="text-xl font-bold text-black">MyBrand</a>
+      <a href="/" class="text-2xl font-bold text-primary">MyBrand</a>
     </div>
 
     <!-- Right: Cart icon -->
     <div class="w-1/3 flex justify-end">
       <button class="relative mr-2">
-        <ShoppingCart className="w-6 h-6" color='black'/>
+        <ShoppingCart className="w-6 h-6 text-primary" />
         <!-- Optional: Cart item count -->
         <span class="absolute top-0 right-0 h-4 w-4 text-xs bg-red-500 text-white rounded-full flex items-center justify-center">3</span>
       </button>
