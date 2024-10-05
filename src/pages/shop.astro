@@ -1,7 +1,10 @@
 ---
+import { ProductCard } from "@/components/_components/productcard";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="">
-
+<Layout title="Shopping Jersey">
+    <div class="w-full h-screen bg-[url('/bg.jpeg')]">
+        <ProductCard client:load/>
+    </div>
 </Layout>
