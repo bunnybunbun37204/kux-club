@@ -3,6 +3,7 @@ interface Props {
 	title: string;
 }
 
+import Topbar from "@/components/_components/Topbar.astro";
 import "@/styles/global.css";
 
 const { title } = Astro.props;
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<div class="flex flex-col min-w-full min-h-full">
+			<Topbar />
 			<slot />
 		</div>
 	</body>
